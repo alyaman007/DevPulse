@@ -1,0 +1,155 @@
+body {
+  background-color: #0f172a;
+  color: #f8fafc;
+  font-family: system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  direction: ltr; /* تحويل اتجاه الواجهة بالكامل من اليسار لليمين */
+}
+
+.header {
+  text-align: center; /* توسيط عنوان DevPulse والوصف */
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  margin: 0;
+  color: #38bdf8;
+  font-size: 2.5rem;
+}
+
+.header p {
+  color: #94a3b8;
+  margin-top: 8px;
+  font-size: 1.1rem;
+}
+
+.ticket-form {
+  display: flex;
+  gap: 10px;
+  margin: 25px 0;
+}
+
+.form-input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #334155;
+  background-color: #1e293b;
+  color: white;
+  font-size: 14px;
+}
+
+.form-select {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #334155;
+  background-color: #1e293b;
+  color: white;
+  font-size: 14px;
+}
+
+.btn-submit {
+  background-color: #0284c7;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.btn-submit:hover {
+  background-color: #0369a1;
+}
+
+.tickets-grid {
+  display: grid;
+  gap: 15px;
+}
+
+.ticket-card {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  padding: 18px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.status-text {
+  font-size: 14px;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.priority-badge {
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.priority-badge.high { background-color: #ef4444; color: white; }
+.priority-badge.medium { background-color: #f59e0b; color: white; }
+.priority-badge.low { background-color: #10b981; color: white; }
+
+.ticket-card h3 {
+  margin: 10px 0 15px 0;
+  font-size: 1.2rem;
+  color: #f1f5f9;
+}
+
+.card-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+.btn-status {
+  background-color: #334155;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.btn-status:hover {
+  background-color: #475569;
+}
+
+.btn-delete {
+  background-color: #dc2626;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.btn-delete:hover {
+  background-color: #b91c1c;
+}
+
+.no-tickets {
+  color: #94a3b8;
+  text-align: center;
+  padding: 20px;
+}
